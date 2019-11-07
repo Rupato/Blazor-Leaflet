@@ -1,0 +1,136 @@
+﻿
+#map {
+    width: 100%;
+    height: 500px;
+}
+
+.class {
+    padding: 50px !important;
+    border: none !important;
+}
+
+
+.info .item {
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.info .item small {
+    color: #888;
+}
+
+.info .item:hover,
+.info .item.active {
+    background: #f8f8f8;
+}
+
+.info .item:last-child {
+    border-bottom: none;
+}
+
+.leaflet-popup-content {
+    width: 240px;
+}
+
+.tabs {
+    position: relative;
+    min-height: 200px;
+    clear: both;
+    margin: 25px 0;
+}
+
+.tab {
+    float: left;
+    display: none;
+}
+
+.tab:first-of-type {
+    display: inline-block;
+}
+
+.tabs-link {
+    position: relative;
+    top: -14px;
+    height: 20px;
+    left: -40px;
+}
+
+.tab-link {
+    background: #eee;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    position: relative;
+    list-style-type: none;
+    left: 1px;
+    top: 1px;
+    cursor: pointer;
+}
+
+.tab-link {
+    background: #f8f8f8;
+}
+
+.tab:target {
+    display: block;
+}
+
+.leaflet-contextmenu {
+    display: none;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.4);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 4px 0;
+    background-color: #fff;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.leaflet-contextmenu a.leaflet-contextmenu-item {
+    display: block;
+    color: #222;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 0 12px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    cursor: default;
+    outline: none;
+}
+
+.leaflet-contextmenu a.leaflet-contextmenu-item-disabled {
+    opacity: 0.5;
+}
+
+.leaflet-contextmenu a.leaflet-contextmenu-item.over {
+    background-color: #f4f4f4;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.leaflet-contextmenu a.leaflet-contextmenu-item-disabled.over {
+    background-color: inherit;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.leaflet-contextmenu-icon {
+    margin: 2px 8px 0 0;
+    width: 16px;
+    height: 16px;
+    float: left;
+    border: 0;
+}
+
+.leaflet-contextmenu-separator {
+    border-bottom: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+

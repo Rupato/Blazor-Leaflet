@@ -1,0 +1,123 @@
+﻿@page "/gridstack"
+<head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive grid demo</title>
+    <link rel="stylesheet" href="lib/gridstack/gridstack.scss" />
+    <link rel="stylesheet" href="lib/gridstack/gridstackextra.scss" />
+    <link rel="stylesheet" href="css/main.min.css" />
+
+        </head>
+        <button class="add-widget btn">add zone</button>
+        <button class="clear-all btn">clear all</button>
+        <button class="get btn">get</button>
+        <div class="grid-stack zone-inner">
+            <div class="grid-stack-item widget" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="4">
+                <div class="grid-stack-item-content widget-inner">
+                    <Maps />
+                </div>
+                <span class="resize-icon"></span>
+                <span class="remove-widget"></span>
+
+            </div>
+            <div class="grid-stack-item widget" data-gs-x="4" data-gs-y="0" data-gs-width="8" data-gs-height="2">
+                <div class="grid-stack-item-content widget-inner">
+                    <Amcharts />
+                </div>
+                <span class="resize-icon"></span>
+                <span class="remove-widget"></span>
+            </div>
+        </div>
+        <q></q>
+        <style>
+           
+
+    .grid-stack {
+        background: lightgoldenrodyellow;
+    }
+
+    .grid-stack-item-content {
+        color: #2c3e50;
+        text-align: center;
+        background-color: #18bc9c;
+    }
+
+    .grid-stack {
+        width: 80%;
+        height: 500px;
+        border: 1px dashed #ddd;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+
+    .grid-stack-item-content {
+        background: #4564ff;
+        top: 5px !important;
+        right: 5px !important;
+        bottom: 5px !important;
+        left: 5px !important;
+        border-radius: 5px;
+    }
+
+    .grid-stack .grid-stack-item .ui-resizable-se {
+        right: 5px !important;
+        bottom: 5px !important;
+        color: #222 !important;
+        background-image: none !important;
+        transform: rotate(0) !important;
+    }
+
+    .grid-stack .grid-stack-item .resize-icon::after {
+        display: block;
+        
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 600;
+        position: absolute;
+        z-index: 90;
+        right: 10px;
+        bottom: 5px;
+        transform: rotate(-45deg);
+    }
+
+    .grid-stack-item.ui-resizable-resizing .grid-stack-item-content {
+        opacity: 0.7 !important;
+    }
+
+    .grid-stack .grid-stack-placeholder > .placeholder-content {
+        top: 3px !important;
+        right: 3px !important;
+        bottom: 3px !important;
+        left: 3px !important;
+        border-radius: 5px;
+        border: 1px dashed rgba(0,0,0,0.3) !important;
+    }
+
+    .remove-widget {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+        .remove-widget::after {    
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 600;
+            position: absolute;
+        }
+</style>
+
+
+
+@code {
+
+}
